@@ -1,146 +1,103 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miley's 18th Birthday Adventure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .choice {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Miley's 18th Birthday Adventure! 🎉</h1>
+        <p>Welcome, Miley! Today, you get to choose your own adventure. Click a button to start!</p>
+        
+        <div id="start" class="visible">
+            <button onclick="showChoice('bookstore')">Start Adventure</button>
+        </div>
+        
+        <div id="bookstore" class="choice">
+            <h2>📍 Stop #1: Choose Your Bookstore!</h2>
+            <img src="bookstore_scene.png" alt="Bookstore Scene">
+            <button onclick="showChoice('crochet')">📚 Writer’s Block Bookstore</button>
+            <button onclick="showChoice('crochet')">📖 The New Romantics Bookstore</button>
+        </div>
+        
+        <div id="crochet" class="choice">
+            <h2>🧶 Stop #2: Choose Your Yarn & Crochet Stop!</h2>
+            <img src="yarn_shop_scene.png" alt="Yarn Shop Scene">
+            <button onclick="showChoice('lunch')">🧵 Four Purls Yarn Shop</button>
+            <button onclick="showChoice('lunch')">🧶 The Knitting Patch</button>
+        </div>
+        
+        <div id="lunch" class="choice">
+            <h2>🍽️ Stop #3: Choose Your Birthday Lunch!</h2>
+            <img src="birthday_lunch_scene.png" alt="Birthday Lunch Scene">
+            <button onclick="showChoice('comic')">🦞 Boston Lobster Feast</button>
+            <button onclick="showChoice('comic')">🍰 Se7en Bites Bakery</button>
+        </div>
+        
+        <div id="comic" class="choice">
+            <h2>🦸‍♂️ Stop #4: Choose Your Comic Book Shop!</h2>
+            <img src="comic_shop_scene.png" alt="Comic Shop Scene">
+            <button onclick="showChoice('bonus')">📖 Coliseum of Comics</button>
+            <button onclick="showChoice('bonus')">🎮 Gods & Monsters</button>
+        </div>
+        
+        <div id="bonus" class="choice">
+            <h2>🕯️ Bonus Stop: Artifact Candle Foundry!</h2>
+            <img src="candle_making_scene.png" alt="Candle Making Scene">
+            <button onclick="showChoice('final')">Yes, let's make a candle! 🕯️</button>
+            <button onclick="showChoice('final')">No thanks, let's get dessert! 🍪</button>
+        </div>
+        
+        <div id="final" class="choice">
+            <h2>🍪 Final Stop: Sweet Birthday Treat!</h2>
+            <img src="bakery_scene.png" alt="Bakery Scene">
+            <p>Gideon’s Bakehouse - The ultimate dessert stop with half-pound cookies and delicious cakes!</p>
+            <h3>🎂 Happy Birthday, Miley! 🎂</h3>
+        </div>
+    </div>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Miley's 18th Birthday Adventure</title>\
-    <style>\
-        body \{\
-            font-family: Arial, sans-serif;\
-            text-align: center;\
-            background-color: #f8f9fa;\
-            padding: 20px;\
-        \}\
-        .container \{\
-            max-width: 600px;\
-            margin: auto;\
-            background: white;\
-            padding: 20px;\
-            border-radius: 10px;\
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);\
-        \}\
-        .choice \{\
-            display: none;\
-        \}\
-        button \{\
-            background-color: #007bff;\
-            color: white;\
-            padding: 10px;\
-            border: none;\
-            border-radius: 5px;\
-            cursor: pointer;\
-            margin: 10px;\
-        \}\
-        img \{\
-            width: 100%;\
-            border-radius: 10px;\
-            margin-top: 10px;\
-        \}\
-    </style>\
-</head>\
-<body>\
-    <div class="container">\
-        <h1>
-\f1 \uc0\u55356 \u57225 
-\f0  Miley's 18th Birthday Adventure! 
-\f1 \uc0\u55356 \u57225 
-\f0 </h1>\
-        <p>Welcome, Miley! Today, you get to choose your own adventure. Click a button to start!</p>\
-        \
-        <button onclick="showChoice('bookstore')">Start Adventure</button>\
-        \
-        <div id="bookstore" class="choice">\
-            <h2>
-\f1 \uc0\u55357 \u56525 
-\f0  Stop #1: Choose Your Bookstore!</h2>\
-            <img src="bookstore_scene.png" alt="Bookstore Scene">\
-            <button onclick="showChoice('crochet')">
-\f1 \uc0\u55357 \u56538 
-\f0  Writer\'92s Block Bookstore</button>\
-            <button onclick="showChoice('crochet')">
-\f1 \uc0\u55357 \u56534 
-\f0  The New Romantics Bookstore</button>\
-        </div>\
-        \
-        <div id="crochet" class="choice">\
-            <h2>
-\f1 \uc0\u55358 \u56822 
-\f0  Stop #2: Choose Your Yarn & Crochet Stop!</h2>\
-            <img src="yarn_shop_scene.png" alt="Yarn Shop Scene">\
-            <button onclick="showChoice('lunch')">
-\f1 \uc0\u55358 \u56821 
-\f0  Four Purls Yarn Shop</button>\
-            <button onclick="showChoice('lunch')">
-\f1 \uc0\u55358 \u56822 
-\f0  The Knitting Patch</button>\
-        </div>\
-        \
-        <div id="lunch" class="choice">\
-            <h2>
-\f1 \uc0\u55356 \u57213 \u65039 
-\f0  Stop #3: Choose Your Birthday Lunch!</h2>\
-            <img src="birthday_lunch_scene.png" alt="Birthday Lunch Scene">\
-            <button onclick="showChoice('comic')">
-\f1 \uc0\u55358 \u56734 
-\f0  Boston Lobster Feast</button>\
-            <button onclick="showChoice('comic')">
-\f1 \uc0\u55356 \u57200 
-\f0  Se7en Bites Bakery</button>\
-        </div>\
-        \
-        <div id="comic" class="choice">\
-            <h2>
-\f1 \uc0\u55358 \u56760 \u8205 \u9794 \u65039 
-\f0  Stop #4: Choose Your Comic Book Shop!</h2>\
-            <img src="comic_shop_scene.png" alt="Comic Shop Scene">\
-            <button onclick="showChoice('bonus')">
-\f1 \uc0\u55357 \u56534 
-\f0  Coliseum of Comics</button>\
-            <button onclick="showChoice('bonus')">
-\f1 \uc0\u55356 \u57262 
-\f0  Gods & Monsters</button>\
-        </div>\
-        \
-        <div id="bonus" class="choice">\
-            <h2>
-\f1 \uc0\u55357 \u56687 \u65039 
-\f0  Bonus Stop: Artifact Candle Foundry!</h2>\
-            <img src="candle_making_scene.png" alt="Candle Making Scene">\
-            <button onclick="showChoice('final')">Yes, let's make a candle! 
-\f1 \uc0\u55357 \u56687 \u65039 
-\f0 </button>\
-            <button onclick="showChoice('final')">No thanks, let's get dessert! 
-\f1 \uc0\u55356 \u57194 
-\f0 </button>\
-        </div>\
-        \
-        <div id="final" class="choice">\
-            <h2>
-\f1 \uc0\u55356 \u57194 
-\f0  Final Stop: Sweet Birthday Treat!</h2>\
-            <img src="bakery_scene.png" alt="Bakery Scene">\
-            <p>Gideon\'92s Bakehouse - The ultimate dessert stop with half-pound cookies and delicious cakes!</p>\
-            <h3>
-\f1 \uc0\u55356 \u57218 
-\f0  Happy Birthday, Miley! 
-\f1 \uc0\u55356 \u57218 
-\f0 </h3>\
-        </div>\
-    </div>\
-\
-    <script>\
-        function showChoice(id) \{\
-            document.querySelectorAll('.choice').forEach(div => div.style.display = 'none');\
-            document.getElementById(id).style.display = 'block';\
-        \}\
-    </script>\
-</body>\
-</html>\
-}
+    <script>
+        function showChoice(id) {
+            document.querySelectorAll('.choice, .visible').forEach(div => div.classList.remove('visible'));
+            document.getElementById(id).classList.add('visible');
+        }
+    </script>
+</body>
+</html>
